@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalia Gold Hotel</title>
+    <style>
+        /* Basic styling for the page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        header img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        h2 {
+            font-size: 28px;
+            margin: 20px 0;
+        }
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+            gap: 30px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+        .service-item {
+            width: 250px;
+            height: auto;
+            text-align: center;
+        }
+        .service-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .service-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            header img {
+                height: 250px;
+            }
+
+            .service-container {
+                grid-template-columns: 1fr; /* Single column layout for smaller screens */
+            }
+
+            .service-item {
+                width: 100%;  /* Take full width on smaller screens */
+            }
+
+            .service-item img {
+                height: 150px;  /* Adjust image height for smaller devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/hotel_image.jpg" alt="Hotel Image">
+        <h1>Xin chào, Quý khách!</h1>
+        <h2>Chúc bạn có một ngày tuyệt vời!</h2>
+    </header>
+
+    <h3 style="text-align: center;">Dịch vụ khách sạn</h3>
+
+    <div class="service-container">
+        <div class="service-item">
+            <img src="images/gym_and_sauna.jpg" alt="Alacarte & Room Services">
+            <div class="service-title">Alacarte & Room Services Menu</div>
+        </div>
+        <div class="service-item">
+            <img src="images/pool.jpg" alt="Vesnus Spa Menu">
+            <div class="service-title">Vesnus Spa Menu</div>
+        </div>
+        <div class="service-item">
+            <img src="images/airport_transfer.jpg" alt="Milibar & Laundry Menu">
+            <div class="service-title">Milibar & Laundry Menu</div>
+        </div>
+        <div class="service-item">
+            <img src="images/laundry_service.jpg" alt="Star Night Bar Menu">
+            <div class="service-title">Star Night Bar Menu</div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Regalia Gold Hotel. Tất cả quyền được bảo vệ.
+    </footer>
+</body>
+</html>
